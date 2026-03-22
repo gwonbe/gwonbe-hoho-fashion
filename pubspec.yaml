@@ -1,0 +1,37 @@
+name: hoho_fashion
+
+description: "hoho_fashion"
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#FFFFFF"
+  icon_background_color: "#FFFFFF"
+  image: "assets/icon/icon_remove_background.png"
+  android_12:
+    color: "#FFFFFF"
+    icon_background_color: "#FFFFFF"
+    image: "assets/icon/icon_remove_background.png"
