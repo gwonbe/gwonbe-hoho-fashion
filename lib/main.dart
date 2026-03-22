@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:hoho_fashion/screen/home/home.dart';
+import 'package:hoho_fashion/l10n/app_localizations.dart';
+import 'package:hoho_fashion/provider/date_time_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -14,11 +18,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hoho Fashion',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Color(0xFFBEADD9)), // FF (불투명) + 색상
+        useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Hoho Fashion'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
     );
   }
 
@@ -26,8 +31,8 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
 
-  const MyHomePage({super.key, required this.title});
   final String title;
+  const MyHomePage({super.key, required this.title});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -44,18 +49,22 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('Hoho Fashion'),
-          ],
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => DateTimeProvider(),
         ),
+      ],
+      child: MaterialApp(
+        theme: ThemeData(
+          primaryColor: Color(0xFFBEADD9),
+          canvasColor: Color(0xFFFCF7FF),
+          focusColor: Color(0xFFA07EE6),
+        ),
+        home: const HomeScreen(),
+        debugShowCheckedModeBanner: false,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
       ),
     );
   }
