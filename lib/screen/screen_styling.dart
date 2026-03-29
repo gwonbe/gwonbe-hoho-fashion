@@ -24,6 +24,7 @@ class _ScreenStyling extends State<ScreenStyling> {
   final List<String> categories = [
     Category.eyes,
     Category.hair,
+    Category.lips,
     Category.dress,
     Category.cloth1,
     Category.cloth2,
@@ -67,7 +68,6 @@ class _ScreenStyling extends State<ScreenStyling> {
       if (value is List) loadedItems[key] = value.map((e) => e.toString()).toList();
     });
     setState(() { items = loadedItems; });
-    debugPrint("$tag items : ${items.toString()}");
   }
 
   void applyItem(String category, String path) {
@@ -123,8 +123,9 @@ class _ScreenStyling extends State<ScreenStyling> {
   }
 
   Widget buildCategoryMenu() {
+    double area = 60;
     return SizedBox(
-      height: 50,
+      height: area + 20,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
@@ -132,13 +133,29 @@ class _ScreenStyling extends State<ScreenStyling> {
           final cat = categories[index];
           final isSelected = cat == currentCategory;
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4),
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: (isSelected ? Colors.pink : Colors.grey[300]),
+            padding: const EdgeInsets.all(5),
+            child: GestureDetector(
+              onTap: () { setState((){currentCategory=cat;}); },
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 150),
+                width: area,
+                height: area,
+                decoration: BoxDecoration(
+                  color: isSelected ? Colors.pink.withOpacity(0.2) : Colors.transparent,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: isSelected ? Colors.pink : Colors.transparent,
+                    width: 3,
+                  ),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    color: isSelected ? Colors.pink.withOpacity(0.15) : Colors.transparent,
+                    child: Image.asset('assets/icon/category/category_$cat.webp', fit: BoxFit.contain,),
+                  ),
+                ),
               ),
-              onPressed: () { setState(() { currentCategory = cat; }); },
-              child: Text(cat),
             ),
           );
         },
@@ -147,16 +164,17 @@ class _ScreenStyling extends State<ScreenStyling> {
   }
 
   Widget buildItemGrid() {
+    double spacing = 8;
     if (items.isEmpty) return const Center(child: CircularProgressIndicator());
     final list = items[currentCategory] ?? [];
     if (list.isEmpty) return const Center(child: Text('No Item'));
     return GridView.builder(
       padding: const EdgeInsets.all(10),
       itemCount: list.length,
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,
-        crossAxisSpacing: 8,
-        mainAxisSpacing: 8,
+        crossAxisSpacing: spacing,
+        mainAxisSpacing: spacing,
       ),
       itemBuilder: (context, index) {
         final path = list[index];

@@ -6,11 +6,15 @@
   "hair": [
     "hair/hair_001.png"
   ],
+  "lips": [
+    "lips/lips_001.png",
+    "lips/lips_002.png"
+  ],
   "dress": [
-    "dress/dress_001.png",
-    "dress/dress_002.png",
-    "dress/dress_003.png",
-    "dress/dress_004.png"
+    "dress/dress_001.webp",
+    "dress/dress_002.webp",
+    "dress/dress_003.webp",
+    "dress/dress_004.webp"
   ],
   "cloth-1": [
     "cloth-1/cloth-1_001.png",
