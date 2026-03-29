@@ -19,6 +19,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   provider: ^6.1.5+1
+  change_app_package_name: ^1.5.0
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +29,18 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/image/
+    - assets/image/character/
+    - assets/image/character/eyes/
+    - assets/image/character/hair/
+    - assets/image/character/dress/
+    - assets/image/character/cloth-1/
+    - assets/image/character/cloth-2/
+    - assets/image/character/shoes/
+    - assets/image/character/hairband/
+    - assets/image/character/necklace/
 
 flutter_native_splash:
   android: true

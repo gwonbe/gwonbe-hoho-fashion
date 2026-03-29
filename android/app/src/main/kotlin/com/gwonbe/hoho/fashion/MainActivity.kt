@@ -1,4 +1,4 @@
-package com.example.fashion.hoho_fashion
+package com.gwonbe.hoho.fashion
 
 import io.flutter.embedding.android.FlutterActivity
 

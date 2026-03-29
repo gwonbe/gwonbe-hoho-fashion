@@ -18,8 +18,8 @@ class _ScreenSettings extends State<ScreenSettings> {
       body: Padding(
         padding: EdgeInsets.all(10),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(AppLocalizations.of(context)!.screen_settings),
           ],

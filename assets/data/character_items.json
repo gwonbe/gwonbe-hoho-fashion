@@ -1,0 +1,33 @@
+{
+  "eyes": [
+    "eyes/eyes_001.png",
+    "eyes/eyes_002.png"
+  ],
+  "hair": [
+    "hair/hair_001.png"
+  ],
+  "dress": [
+    "dress/dress_001.png",
+    "dress/dress_002.png",
+    "dress/dress_003.png",
+    "dress/dress_004.png"
+  ],
+  "cloth-1": [
+    "cloth-1/cloth-1_001.png",
+    "cloth-1/cloth-1_002.png"
+  ],
+  "cloth-2": [
+    "cloth-2/cloth-2_001.png",
+    "cloth-2/cloth-2_002.png"
+  ],
+  "shoes": [
+    "shoes/shoes_001.png",
+    "shoes/shoes_002.png"
+  ],
+  "hairband": [
+    "hairband/hairband_001.png"
+  ],
+  "necklace": [
+    "necklace/necklace_001.png"
+  ]
+}
