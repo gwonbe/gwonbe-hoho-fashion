@@ -2,14 +2,14 @@ import 'dart:core';
 
 class Category {
 
-  static final String eyes = 'eyes';
-  static final String hair = 'hair';
-  static final String lips = 'lips';
-  static final String dress = 'dress';
-  static final String cloth1 = 'cloth-1';
-  static final String cloth2 = 'cloth-2';
-  static final String shoes = 'shoes';
-  static final String hairband = 'hairband';
-  static final String necklace = 'necklace';
+  static const String eyes = 'eyes';
+  static const String hair = 'hair';
+  static const String lips = 'lips';
+  static const String dress = 'dress';
+  static const String cloth1 = 'cloth-1';
+  static const String cloth2 = 'cloth-2';
+  static const String shoes = 'shoes';
+  static const String hairband = 'hairband';
+  static const String necklace = 'necklace';
 
 }

@@ -1,10 +1,13 @@
 {
   "eyes": [
     "eyes/eyes_001.png",
-    "eyes/eyes_002.png"
+    "eyes/eyes_002.png",
+    "eyes/eyes_003.png"
   ],
   "hair": [
-    "hair/hair_001.png"
+    "hair/hair_001.png",
+    "hair/hair_002.png",
+    "hair/hair_003.png"
   ],
   "lips": [
     "lips/lips_001.png",
@@ -14,7 +17,9 @@
     "dress/dress_001.webp",
     "dress/dress_002.webp",
     "dress/dress_003.webp",
-    "dress/dress_004.webp"
+    "dress/dress_004.webp",
+    "dress/dress_005.png",
+    "dress/dress_006.png"
   ],
   "cloth-1": [
     "cloth-1/cloth-1_001.png",
@@ -26,7 +31,13 @@
   ],
   "shoes": [
     "shoes/shoes_001.png",
-    "shoes/shoes_002.png"
+    "shoes/shoes_002.png",
+    "shoes/shoes_003.png",
+    "shoes/shoes_004.png",
+    "shoes/shoes_005.png",
+    "shoes/shoes_006.png",
+    "shoes/shoes_007.png",
+    "shoes/shoes_008.png"
   ],
   "hairband": [
     "hairband/hairband_001.png"

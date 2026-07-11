@@ -182,11 +182,142 @@ class _ScreenStyling extends State<ScreenStyling> {
           onTap: () => applyItem(currentCategory, path),
           child: Container(
             decoration: BoxDecoration(border: Border.all(color: Colors.grey),),
-            child: Image.asset(imagePath+path, fit: BoxFit.contain, cacheWidth: 200,),
+            child: buildPreviewImage(currentCategory, path),
           ),
         );
       },
     );
   }
 
+  Widget buildPreviewImage(String category, String path) {
+    Alignment alignment;
+    double scale;
+
+    switch (category) {
+
+      case Category.eyes:
+        alignment = const Alignment(0, -0.55);
+        scale = 2.8;
+        break;
+
+      case Category.hair:
+        alignment = const Alignment(0, -0.75);
+        scale = 2.2;
+        break;
+
+      case Category.lips:
+        alignment = const Alignment(0, -0.25);
+        scale = 3.0;
+        break;
+
+      case Category.necklace:
+        alignment = const Alignment(0, 0.05);
+        scale = 2.6;
+        break;
+
+      case Category.hairband:
+        alignment = const Alignment(0, -0.95);
+        scale = 2.4;
+        break;
+
+      case Category.cloth1:
+      case Category.cloth2:
+      case Category.dress:
+        alignment = const Alignment(0, 0.35);
+        scale = 2.0;
+        break;
+
+      case Category.shoes:
+        alignment = const Alignment(0, 1.0);
+        scale = 2.5;
+        break;
+
+      default:
+        alignment = Alignment.center;
+        scale = 2.0;
+    }
+
+    return ClipRect(
+      child: Transform.scale(
+        scale: scale,
+        alignment: alignment,
+        child: Image.asset(
+          imagePath + path,
+          fit: BoxFit.contain,
+          alignment: alignment,
+        ),
+      ),
+    );
+  }
+
 }
+
+class PreviewConfig {
+
+  final Alignment alignment;
+  final double scale;
+
+  const PreviewConfig({
+    required this.alignment,
+    required this.scale,
+  });
+
+}
+
+final Map<String, PreviewConfig> previewConfigs = {
+
+  Category.eyes:
+  PreviewConfig(
+    alignment: Alignment(0, -0.55),
+    scale: 2.8,
+  ),
+
+  Category.hair:
+  PreviewConfig(
+    alignment: Alignment(0, -0.75),
+    scale: 2.2,
+  ),
+
+  Category.lips:
+  PreviewConfig(
+    alignment: Alignment(0, -0.25),
+    scale: 3.0,
+  ),
+
+  Category.dress:
+  PreviewConfig(
+    alignment: Alignment(0, 0.35),
+    scale: 2.0,
+  ),
+
+  Category.cloth1:
+  PreviewConfig(
+    alignment: Alignment(0, 0.35),
+    scale: 2.0,
+  ),
+
+  Category.cloth2:
+  PreviewConfig(
+    alignment: Alignment(0, 0.35),
+    scale: 2.0,
+  ),
+
+  Category.shoes:
+  PreviewConfig(
+    alignment: Alignment(0, 1.0),
+    scale: 2.5,
+  ),
+
+  Category.necklace:
+  PreviewConfig(
+    alignment: Alignment(0, 0.05),
+    scale: 2.6,
+  ),
+
+  Category.hairband:
+  PreviewConfig(
+    alignment: Alignment(0, -0.95),
+    scale: 2.4,
+  ),
+
+};
