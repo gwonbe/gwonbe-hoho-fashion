@@ -21,14 +21,14 @@ class _ScreenStyling extends State<ScreenStyling> {
   late Map<String, String?> equipped;
   final imagePath = "assets/image/character/";
 
-  final List<String> categories = [
+  final List<String> categories = [ // 앞에 있을수록 밑에 깔린다.
     Category.eyes,
     Category.hair,
     Category.lips,
+    Category.shoes,
     Category.dress,
     Category.cloth1,
     Category.cloth2,
-    Category.shoes,
     Category.hairband,
     Category.necklace,
   ];

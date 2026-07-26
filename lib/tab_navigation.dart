@@ -74,6 +74,7 @@ class TabNavigationState extends State<TabNavigation> {
       // 섹션별 내용
       body: PageView(
         controller: _pageController,
+        physics: const NeverScrollableScrollPhysics(), // 스와이프 비활성화
         onPageChanged: (int index) {
           setState(() {
             _currentIndex = index;

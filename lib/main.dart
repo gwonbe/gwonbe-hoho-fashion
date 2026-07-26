@@ -57,9 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ],
       child: MaterialApp(
         theme: ThemeData(
-          primaryColor: Color(0xFFBEADD9),
-          canvasColor: Color(0xFFFCF7FF),
-          focusColor: Color(0xFFA07EE6),
+          primaryColor: Color(0xFFFF28AE),
+          canvasColor: Color(0xFFFFF4FD),
+          focusColor: Color(0xFFD785FF),
         ),
         home: const HomeScreen(),
         debugShowCheckedModeBanner: false,
