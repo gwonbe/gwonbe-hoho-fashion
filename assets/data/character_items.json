@@ -1,75 +1,30 @@
 {
   "eyes": [
-    "eyes/eyes_001.png",
-    "eyes/eyes_002.png",
-    "eyes/eyes_003.png",
-    "eyes/eyes_004.png",
-    "eyes/eyes_005.png",
-    "eyes/eyes_006.png",
-    "eyes/eyes_007.png",
-    "eyes/eyes_008.png"
+    "eyes/eyes_2026_0001.png",
+    "eyes/eyes_2026_0002.png",
+    "eyes/eyes_2026_0003.png"
   ],
   "hair": [
-    "hair/hair_001.png",
-    "hair/hair_002.png",
-    "hair/hair_003.png",
-    "hair/hair_004.webp",
-    "hair/hair_005.webp",
-    "hair/hair_006.webp",
-    "hair/hair_007.webp",
-    "hair/hair_008.webp",
-    "hair/hair_009.webp",
-    "hair/hair_010.png"
+    "hair/hair_2026_0001.png",
+    "hair/hair_2026_0002.png",
+    "hair/hair_2026_0003.png"
   ],
   "lips": [
-    "lips/lips_001.png",
-    "lips/lips_002.png",
-    "lips/lips_003.png",
-    "lips/lips_004.png",
-    "lips/lips_005.png"
+    "lips/lips_2026_0001.png"
   ],
   "dress": [
-    "dress/dress_001.webp",
-    "dress/dress_002.webp",
-    "dress/dress_003.webp",
-    "dress/dress_004.webp",
-    "dress/dress_005.png",
-    "dress/dress_006.png",
-    "dress/dress_007.png"
+    "dress/dress_2026_0001.png"
   ],
   "cloth-1": [
-    "cloth-1/cloth-1_001.png",
-    "cloth-1/cloth-1_002.png",
-    "cloth-1/cloth-1_003.png",
-    "cloth-1/cloth-1_004.png"
+    "cloth-1/cloth-1_2026_0001.png"
   ],
   "cloth-2": [
-    "cloth-2/cloth-2_001.png",
-    "cloth-2/cloth-2_002.png",
-    "cloth-2/cloth-2_003.png",
-    "cloth-2/cloth-2_004.png"
+    "cloth-2/cloth-2_2026_0001.png"
   ],
   "shoes": [
-    "shoes/shoes_001.png",
-    "shoes/shoes_002.png",
-    "shoes/shoes_003.png",
-    "shoes/shoes_004.png",
-    "shoes/shoes_005.png",
-    "shoes/shoes_006.png",
-    "shoes/shoes_007.png",
-    "shoes/shoes_008.png",
-    "shoes/shoes_009.png"
+    "shoes/shoes_2026_0001.png"
   ],
   "hairband": [
-    "hairband/hairband_001.png",
-    "hairband/hairband_002.png",
-    "hairband/hairband_003.png",
-    "hairband/hairband_004.png",
-    "hairband/hairband_005.png",
-    "hairband/hairband_006.png"
-  ],
-  "necklace": [
-    "necklace/necklace_001.png",
-    "necklace/necklace_002.png"
+    "hairband/hairband_2026_0001.png"
   ]
 }

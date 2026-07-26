@@ -10,6 +10,5 @@ class Category {
   static const String cloth2 = 'cloth-2';
   static const String shoes = 'shoes';
   static const String hairband = 'hairband';
-  static const String necklace = 'necklace';
 
 }

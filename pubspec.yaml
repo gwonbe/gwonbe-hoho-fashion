@@ -41,7 +41,6 @@ flutter:
     - assets/image/character/cloth-2/
     - assets/image/character/shoes/
     - assets/image/character/hairband/
-    - assets/image/character/necklace/
     - assets/icon/category/
 
 flutter_native_splash:

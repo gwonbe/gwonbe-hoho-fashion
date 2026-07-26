@@ -30,7 +30,6 @@ class _ScreenStyling extends State<ScreenStyling> {
     Category.cloth1,
     Category.cloth2,
     Category.hairband,
-    Category.necklace,
   ];
 
   @override
@@ -210,11 +209,6 @@ class _ScreenStyling extends State<ScreenStyling> {
         scale = 3.0;
         break;
 
-      case Category.necklace:
-        alignment = const Alignment(0, 0.05);
-        scale = 2.6;
-        break;
-
       case Category.hairband:
         alignment = const Alignment(0, -0.95);
         scale = 2.4;
@@ -306,12 +300,6 @@ final Map<String, PreviewConfig> previewConfigs = {
   PreviewConfig(
     alignment: Alignment(0, 1.0),
     scale: 2.5,
-  ),
-
-  Category.necklace:
-  PreviewConfig(
-    alignment: Alignment(0, 0.05),
-    scale: 2.6,
   ),
 
   Category.hairband:
