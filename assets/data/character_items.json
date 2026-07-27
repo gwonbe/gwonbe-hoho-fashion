@@ -2,7 +2,9 @@
   "eyes": [
     "eyes/eyes_2026_0001.png",
     "eyes/eyes_2026_0002.png",
-    "eyes/eyes_2026_0003.png"
+    "eyes/eyes_2026_0003.png",
+    "eyes/eyes_2026_0004.png",
+    "eyes/eyes_2026_0005.png"
   ],
   "hair": [
     "hair/hair_2026_0001.png",
@@ -10,10 +12,13 @@
     "hair/hair_2026_0003.png"
   ],
   "lips": [
-    "lips/lips_2026_0001.png"
+    "lips/lips_2026_0001.png",
+    "lips/lips_2026_0002.png",
+    "lips/lips_2026_0003.png"
   ],
   "dress": [
-    "dress/dress_2026_0001.png"
+    "dress/dress_2026_0001.png",
+    "dress/dress_2026_0002.png"
   ],
   "cloth-1": [
     "cloth-1/cloth-1_2026_0001.png"
